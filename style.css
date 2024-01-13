@@ -1,0 +1,102 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  outline: none;
+}
+.conteiner {
+  width: 80%;
+  height: 100vh;
+}
+.panel h1{
+    font-size: 48px;
+}
+.btn{
+    background: transparent;
+    width: 300px;
+    height: 40px;
+    padding: 3px;
+    position: relative;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 1.5em;
+    color: red;
+    cursor: pointer;
+    font-family: cursive;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+.btn:hover{
+    color: rgb(88 199 250 / 100%);
+    transition:  1s;
+    background-color: black;
+    border: 2px solid rgb(88 199 250 / 100%);
+}
+.btn:hover:before, .card:hover:after{
+    animation: none;
+    opacity: 0;
+}
+.btn::before{
+    content: '';
+    width: 104%;
+    height: 102%;
+    border-radius: 8px;
+    background-image: 
+    linear-gradient(
+        var(--rotate),#5ddcff,#3c67e3 43%, #4e00c2
+    );
+    position: absolute;
+    z-index: -1;
+    top: -1;
+    left: -2;
+    animation: spin 2.5s linear infinite;
+}
+.panel{
+    display: none;
+    overflow: hidden;
+    padding: 15px 30px;
+}
+.active {
+    display: block!important;
+}
+.p{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #000;
+    background-color: grey;
+    border-radius: 15px;
+}
+.mask{
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    border: 1px solid #000;
+    background-color: aliceblue;
+}
+.item{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.item h1 span ::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    border: 1px solid #000;
+}
+.spananimation{
+    animation: anim .5s linear 1;
+}
+@keyframes anim  {
+
+}
